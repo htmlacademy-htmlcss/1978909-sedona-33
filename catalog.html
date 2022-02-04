@@ -7,7 +7,7 @@
   <body>
     <header class="header">
         <img class="header-logo" src="" alt="Logo «Sedona».">
-        <section class="header-navigation">
+        <nav class="header-navigation">
             <ul class="navigation-list">
                 <li class="navigation-item">
                     <a class="navigation-logo" href="index.html">Главная</a>
@@ -19,13 +19,15 @@
                     <a class="navigation-user-menu navigation-link-сurrent" href="catalog.html">Гостиницы</a>
                 </li>
             </ul>
+        </nav>
+        <section>
             <ul class="navigation-user">
-                <li class="navigation-item">
+                <li class="navigation-icon">
                     <a class="navigation-search" href="#">
                         <span class="visually-hidden">search</span>
                     </a>
                 </li>
-                <li class="navigation-item">
+                <li class="navigation-icon">
                     <a class="navigation-like" href="#">
                         <span class="visually-hidden">Like</span>
                     </a>
@@ -38,7 +40,6 @@
     </header>
 
     <main class="main-inner">
-        <article class="main-page">
             <header class="inner-header">
                 <h1 class="inner-header-title">Гостиницы Седоны</h1>
                 <ul class="breadcrumbs">
@@ -52,7 +53,7 @@
             </header>
             <section class="catalog-products">
                 <h2 class="visually-hidden">Filter</h2>
-                <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get"></form>
+                <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Инфраструктура:</legend>
                         <ul class="infrastructure-filter-list">
@@ -211,7 +212,6 @@
                 <input class="email-field" type="email" name="email" placeholder="Ваш email">
                 <input class="email-button" type="submit" value="ПОДПИСАТЬСЯ">
             </section>
-        </article>
     </main>
 
     <footer class="page-footer">
@@ -234,12 +234,8 @@
                         </a>
                     </li>
                 </ul>
-            </nav>
-            <nav class="footer-tel">
                 <p class="footer-tel">+7 (812) 812-12-12</p>
-            </nav>
-            <nav class="footer-logo">
-                    <a href="https://htmlacademy.ru/"><img class="footer-logo" src="" alt="Logo HTMLAcademy"></a>
+                <a href="https://htmlacademy.ru/"><img class="footer-logo" src="" alt="Logo HTMLAcademy"></a>
             </nav>
     </footer>
   </body>
