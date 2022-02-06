@@ -19,6 +19,10 @@ body {
     background-color: #fff;
     color: black;
 }
+body a {
+    color: #000000;
+    text-decoration: none;
+}
 
 /* ссылки в хедер*/
 .navigation-list {
@@ -40,7 +44,6 @@ body {
     color: #ffffff;
 }
 .header a {
-    color: #000000;
     text-decoration: none;
 }
 .header {
@@ -263,4 +266,178 @@ body {
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
+}
+/* для страницы каталога*/
+.product-card-detail-button {
+    background-color: #756257;
+    color: #ffffff;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.navigation-user-button {
+    background-color: #756257;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color:#fff;
+}
+.navigation-button {
+    color:#fff;
+}
+.inner-header-title {
+    font-weight: 700;
+    font-family: "PT Sans";
+    font-size: 60px;
+    line-height: 78px;
+    color: #ffffff;
+}
+.breadcrumbs-link {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+}
+/**/
+.inner-backgroung-images {
+    background-image: url("images/images-catalog/catalog-filter-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.button-select {
+    background-color: #83B3D3;
+    color: #fff;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.button-reset {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.product-card-select-button {
+    background-color: #83B3D3;
+    color: #FFFFFF;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.product-card-select-button-actived {
+    color: #FFFFFF;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #7DB54F;
+}
+.product-card-price {
+    color: #333333;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+}
+.roduct-card-type-room {
+    color: #333333;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+}
+.product-card-title {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+.rating {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    background-color: #F2F2F2;
+}
+.button-load-more {
+    background-color: #83B3D3;
+    color: #ffffff;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.email-field {
+    background-color: #F2F2F2;
+}
+.pagination-link {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    background-color: #83B3D3;
+}
+.pagination-current {
+    color: #000000;
+    background-color: #F2F2F2;
+}
+.number-hotels {
+    font-size: 18px;
+    line-height: 23px;
+}
+.main-subscription-info {
+    color: black;
+    background-color: #fff;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.email-subscription-info {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.email-subscription-description-info {
+    color: #333333;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
 }
