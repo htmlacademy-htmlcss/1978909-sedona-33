@@ -1,0 +1,266 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/pt-sans-400.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/pt-sans-700.woff2") format("woff2");
+    font-display: swap;
+}
+body {
+    font-family: "PT Sans" sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #fff;
+    color: black;
+}
+
+/* ссылки в хедер*/
+.navigation-list {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    text-transform: uppercase;
+}
+.navigation-user-button {
+    font-size: 16px;
+    font-family: "PT Sans";
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    background-color: #756257;
+    color: #ffffff;
+}
+.header a {
+    color: #000000;
+    text-decoration: none;
+}
+.header {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+/*фон на главном заголовке */
+.main-title {
+    color: black;
+    background-color: #fff;
+    background-image: url("images/images-title/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+/* big logo*/
+.main-logo {
+    background-repeat: no-repeat;
+}
+/*Седона небольшой городок в аризоне..*/
+.main-logo-description {
+    font-family: "PT Sans" sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*Рассмотрим 5 причин...*/
+.main-reason {
+    font-family: "PT Sans" sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: #333333;
+    text-align: center;
+}
+.main-subscription {
+    color: black;
+    background-color: #fff;
+    background-image: url("images/images-title/background-field-subscription.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+/* первое приемущество*/
+.first-advantage-example {
+    background-color: #83B3D3;
+}
+/*Настояший городок*/
+.advantages-example {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+/*#1*/
+.advantages-example-number {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+/*Седона не аттракцион...*/
+.advantages-description-example {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #fff;
+}
+/*жилье/еда/сувениры*/
+.advantages-type {
+    color: #000000;
+    font-size: 24px;
+    line-height: 26px;    
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.advantages-item-home {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-item-road {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+.advantages-item-souvenir {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-type-description {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #333333;
+}
+.advantages-item-food {
+    background-color: #fff;
+}
+/*Второе приемущество*/
+.second-advantage-example {
+    background-color: #83B3D3;
+}
+/*номера в приемуществах*/
+.advantages-number {
+    color: #333333;
+    text-align: center;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+}
+/*Там есть мост дьявола*/
+.second-advantages-example {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+/*#2*/
+.second-advantages-example-number {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+/*да по нему сложно пройти*/
+.second-advantages-description-example {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #fff;
+}
+/* поиск отеля*/
+.search-hotels {
+    text-align: center;
+}
+.hotel-search {
+    font-family: "PT Sans", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+.hotel-search-description {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* подписка на рассылку*/
+.email-subscription {
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+.email-subscription-description {
+    color: #ffffff;
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+}
+.visually-hidden {
+    display: none;
+}
+.link-search-hotels {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
+    color: #ffffff;
+    background-color: #756257;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.email-button {
+    font-family: PT Sans;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    background-color: #83b3d3;
+    text-decoration: none;
+  }
+.footer-tel {
+    font-family: "PT Sans", sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
