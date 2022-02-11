@@ -1,25 +1,25 @@
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
-    font-weight: 400;
-    src: url("fonts/pt-sans-400.woff2") format("woff2");
+    font-weight: 400; 
+    src: url("fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/pt-sans-700.woff2") format("woff2");
+    src: url("fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
 body {
-    font-family: "PT Sans" sans-serif;
     font-size: 18px;
     line-height: 21px;
     background-color: #fff;
     color: black;
+    font-family: "PT Sans";
 }
-body a {
+.navigation-list a {
     color: #000000;
     text-decoration: none;
 }
@@ -36,7 +36,6 @@ body a {
 }
 .navigation-user-button {
     font-size: 16px;
-    font-family: "PT Sans";
     font-weight: 700;
     line-height: 20px;
     text-align: center;
@@ -66,7 +65,6 @@ body a {
 }
 /*Седона небольшой городок в аризоне..*/
 .main-logo-description {
-    font-family: "PT Sans" sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -76,7 +74,6 @@ body a {
 }
 /*Рассмотрим 5 причин...*/
 .main-reason {
-    font-family: "PT Sans" sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -100,14 +97,12 @@ body a {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    font-family: "PT Sans", sans-serif;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
 }
 /*#1*/
 .advantages-example-number {
-    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-size: 18px;
     line-height: 21px;
@@ -117,7 +112,6 @@ body a {
 }
 /*Седона не аттракцион...*/
 .advantages-description-example {
-    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-size: 18px;
     line-height: 21px;
@@ -144,7 +138,6 @@ body a {
     background-color: rgba(131, 179, 211, 0.12);
 }
 .advantages-type-description {
-    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -163,7 +156,6 @@ body a {
 .advantages-number {
     color: #333333;
     text-align: center;
-    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
 }
@@ -172,14 +164,12 @@ body a {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    font-family: "PT Sans", sans-serif;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
 }
 /*#2*/
 .second-advantages-example-number {
-    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-size: 18px;
     line-height: 21px;
@@ -189,7 +179,6 @@ body a {
 }
 /*да по нему сложно пройти*/
 .second-advantages-description-example {
-    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-size: 18px;
     line-height: 21px;
@@ -201,7 +190,6 @@ body a {
     text-align: center;
 }
 .hotel-search {
-    font-family: "PT Sans", sans-serif;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -209,7 +197,6 @@ body a {
     text-transform: uppercase;
 }
 .hotel-search-description {
-    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-size: 22px;
     line-height: 26px;
@@ -220,7 +207,6 @@ body a {
 /* подписка на рассылку*/
 .email-subscription {
     color: #ffffff;
-    font-family: "PT Sans";
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -229,7 +215,6 @@ body a {
 }
 .email-subscription-description {
     color: #ffffff;
-    font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
@@ -239,7 +224,6 @@ body a {
     display: none;
 }
 .link-search-hotels {
-    font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -250,7 +234,6 @@ body a {
     text-decoration: none;
 }
 .email-button {
-    font-family: PT Sans;
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
@@ -260,7 +243,6 @@ body a {
     text-decoration: none;
   }
 .footer-tel {
-    font-family: "PT Sans", sans-serif;
     font-size: 40px;
     line-height: 40px;
     font-weight: 400;
@@ -271,7 +253,6 @@ body a {
 .product-card-detail-button {
     background-color: #756257;
     color: #ffffff;
-    font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -291,7 +272,6 @@ body a {
 }
 .inner-header-title {
     font-weight: 700;
-    font-family: "PT Sans";
     font-size: 60px;
     line-height: 78px;
     color: #ffffff;
@@ -312,7 +292,6 @@ body a {
 .button-select {
     background-color: #83B3D3;
     color: #fff;
-    font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -321,7 +300,6 @@ body a {
     text-transform: uppercase;
 }
 .button-reset {
-    font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -332,7 +310,6 @@ body a {
 .product-card-select-button {
     background-color: #83B3D3;
     color: #FFFFFF;
-    font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -342,7 +319,6 @@ body a {
 }
 .product-card-select-button-actived {
     color: #FFFFFF;
-    font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -351,24 +327,25 @@ body a {
     text-transform: uppercase;
     background-color: #7DB54F;
 }
+.catalog-list a {
+    text-decoration: none;    
+}
 .product-card-price {
     color: #333333;
-    font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 23px;
 }
-.roduct-card-type-room {
+.product-card-type-room {
     color: #333333;
-    font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 23px;
 }
+
 .product-card-title {
-    font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -376,7 +353,6 @@ body a {
     color: #000000;
 }
 .rating {
-    font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -389,7 +365,6 @@ body a {
 .button-load-more {
     background-color: #83B3D3;
     color: #ffffff;
-    font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -400,8 +375,10 @@ body a {
 .email-field {
     background-color: #F2F2F2;
 }
+.pagination-item a {
+    text-decoration: none;
+}
 .pagination-link {
-    font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
