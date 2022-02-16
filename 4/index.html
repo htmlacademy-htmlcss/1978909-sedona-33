@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <base href="https://htmlacademy-htmlcss.github.io/1978909-sedona-33/4/">
 </head>
 
@@ -25,7 +25,6 @@
                     </li>
                 </ul>
             </nav>
-            <section class="index-header-button">
                 <ul class="navigation-user">
                     <li class="navigation-icon">
                         <a class="navigation-search" href="#">
@@ -41,7 +40,6 @@
                         <a class="navigation-user-button" href="#">ХОЧУ СЮДА!</a>
                     </li>
                 </ul>
-            </section>
         </div>
     </header>
 
@@ -86,7 +84,7 @@
                 </section>
 
                 <section class="index-columns second-advantage-example">
-                    <h3 class="visually-hidden">Второе приемущества</h3>
+                    <h3 class="visually-hidden">Второе достоинство</h3>
                     <img class="advantages-item-second" src="images/images-index/photo-advantage/photo-advantage-2.jpg" width="800px" height="384px" alt="Second advantage">
                     <div class="second-example-description">
                         <p class="second-advantages-example">Там есть<br> мост дьявола</p>
@@ -96,7 +94,7 @@
                 </section>
 
                 <section class="additional-list">
-                    <h3 class="visually-hidden">Дополнительные приемущества</h3>
+                    <h3 class="visually-hidden">Дополные плюсы</h3>
                     <ul class="advantages-list">
                         <li class="advantages-item-home">
                             <p class="advantages-type ">Небольшая площадь</p>
@@ -128,8 +126,10 @@
                 <h2 class="visually-hidden">Рассылка</h2>
                 <p class="email-subscription">Подпишитесь на рассылку</p>
                 <p class="email-subscription-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-                <input class="email-field" type="email" name="email" placeholder="Ваш email">
-                <input class="email-button" type="button" value="ПОДПИСАТЬСЯ">
+                <form class="email-registration" action="https://echo.htmlacademy.ru/" method="post">
+                    <input class="email-field" type="email" name="email" placeholder="Ваш email">
+                    <input class="email-button" type="button" value="ПОДПИСАТЬСЯ">
+                </form> 
             </section>
         </div>
     </main>
