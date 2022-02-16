@@ -18,7 +18,6 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
     margin: 0;
     font-size: 18px;
     line-height: 21px;
@@ -117,15 +116,6 @@ body {
     line-height: 36px;
     color: #333333;
     text-align: center;
-}
-.main-subscription {
-    color: black;
-    background-color: #fff;
-    background-image: url("images/images-index/background-field-subscription.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
 }
 /* первое приемущество*/
 .first-advantage-example {
@@ -297,6 +287,15 @@ body {
 .main-subscription {
     width: 1200px;
 }
+.main-subscription {
+    color: black;
+    background-color: #fff;
+    background-image: url("images/images-index/background-field-subscription.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
 .email-subscription {
     color: #ffffff;
     font-size: 30px;
@@ -312,9 +311,11 @@ body {
     font-weight: 400;
     text-align: center;
 }
+.email-registration {
+    text-align: center;
+}
 .email-field {
     width: 600px;
-    margin-left: 240px;
 }
 .visually-hidden {
     display: none;
@@ -476,8 +477,6 @@ body {
 }
 .catalog-filter {
     width: 1057px;
-    /*margin-right: 53px;
-    margin-left: 44px;*/
 }
 .catalog-list {
     display: flex;
