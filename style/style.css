@@ -55,7 +55,7 @@ body {
 .main-title {
     color: black;
     background-color: #fff;
-    background-image: url("images/images-title/index-background.jpg");
+    background-image: url("images/images-index/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -84,7 +84,7 @@ body {
 .main-subscription {
     color: black;
     background-color: #fff;
-    background-image: url("images/images-title/background-field-subscription.jpg");
+    background-image: url("images/images-index/background-field-subscription.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
