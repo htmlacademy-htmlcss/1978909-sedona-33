@@ -2,22 +2,53 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400; 
-    src: url("fonts/ptsans-400.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/ptsans-700.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
+html {
+    height: 100%;
+}
 body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     font-size: 18px;
     line-height: 21px;
     background-color: #fff;
     color: black;
     font-family: "PT Sans";
+}
+/* Все из header*/
+.index-header {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+    color: #000000;
+    background-color: #ffffff;
+}
+.header-logo {
+    width: 139px;
+    margin: 0;
+    padding: 0;
+    margin-right: 30px;
+}
+.header-navigation {
+    margin: 0;
+    padding: 0;
+    width: 470px;
+    margin-right: 282px;
+}
+.index-header-button {
+    margin: 0;
+    padding: 0;
+    max-width: 300px;
 }
 .navigation-list a {
     color: #000000;
@@ -29,7 +60,6 @@ body {
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
-    text-align: center;
     color: #000000;
     background-color: #ffffff;
     text-transform: uppercase;
@@ -45,23 +75,32 @@ body {
 .header a {
     text-decoration: none;
 }
-.header {
-    color: #000000;
-    background-color: #ffffff;
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+/* все из main*/
+.main-container {
+    flex-grow: 1;
 }
-
-
+.visually-hidden {
+    display: none;
+}
 /*фон на главном заголовке */
-.main-title {
+.main-index {
     color: black;
     background-color: #fff;
-    background-image: url("images/images-title/index-background.jpg");
+    background-image: url("../images/images-index/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    width: 1200px;
+    margin: 0 auto;
 }
 /* big logo*/
 .main-logo {
     background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
 }
 /*Седона небольшой городок в аризоне..*/
 .main-logo-description {
@@ -80,17 +119,20 @@ body {
     line-height: 36px;
     color: #333333;
     text-align: center;
-}
-.main-subscription {
-    color: black;
-    background-color: #fff;
-    background-image: url("images/images-title/background-field-subscription.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    margin: 0;
 }
 /* первое приемущество*/
 .first-advantage-example {
     background-color: #83B3D3;
+}
+.first-example-description {
+    width: 400px;
+    text-align: center;
+}
+.advantages-item-first {
+    width: 800px;
+    margin: 0;
+    padding: 0;
 }
 /*Настояший городок*/
 .advantages-example {
@@ -115,8 +157,9 @@ body {
     font-style: normal;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
     color: #fff;
+    width: 250px;
+    padding-left: 75px;
 }
 /*жилье/еда/сувениры*/
 .advantages-type {
@@ -128,14 +171,21 @@ body {
     font-style: normal;
     text-transform: uppercase;
 }
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+/*иконки в приемуществах*/
 .advantages-item-home {
     background-color: rgba(131, 179, 211, 0.12);
+    width: 400px;
 }
-.advantages-item-road {
-    background-color: rgba(131, 179, 211, 0.2);
-}
-.advantages-item-souvenir {
-    background-color: rgba(131, 179, 211, 0.12);
+.advantages-item-food {
+    background-color: #fff;
+    width: 400px;
+    text-align: center;
 }
 .advantages-type-description {
     font-size: 18px;
@@ -144,9 +194,13 @@ body {
     line-height: 21px;
     text-align: center;
     color: #333333;
+    width: 250px;
+    padding-left: 75px;
 }
-.advantages-item-food {
-    background-color: #fff;
+.index-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
 }
 /*Второе приемущество*/
 .second-advantage-example {
@@ -155,9 +209,17 @@ body {
 /*номера в приемуществах*/
 .advantages-number {
     color: #333333;
-    text-align: center;
     font-size: 18px;
     line-height: 21px;
+    text-align: center;
+}
+.advantages-item-second {
+    width: 800px;
+    margin: 0;
+    padding: 0;
+}
+.second-example-description {
+    width: 400px;
 }
 /*Там есть мост дьявола*/
 .second-advantages-example {
@@ -177,6 +239,10 @@ body {
     color: #fff;
     text-transform: uppercase;
 }
+.second-example-description {
+    width: 400px;
+    text-align: center;
+}
 /*да по нему сложно пройти*/
 .second-advantages-description-example {
     font-style: normal;
@@ -184,6 +250,23 @@ body {
     line-height: 21px;
     text-align: center;
     color: #fff;
+    width: 220px;
+    padding-left: 90px;
+}
+/* приемущество c 3 по 5*/
+.advantages-item-home {
+    width: 400px;
+    text-align: center;
+}
+.advantages-item-road {
+    background-color: rgba(131, 179, 211, 0.2);
+    width: 400px;
+    text-align: center;
+}
+.advantages-item-souvenir {
+    background-color: rgba(131, 179, 211, 0.12);
+    width: 400px;
+    text-align: center;
 }
 /* поиск отеля*/
 .search-hotels {
@@ -205,6 +288,18 @@ body {
 }
 
 /* подписка на рассылку*/
+.main-subscription {
+    width: 1200px;
+}
+.main-subscription {
+    color: black;
+    background-color: #fff;
+    background-image: url("../images/images-index/background-field-subscription.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
 .email-subscription {
     color: #ffffff;
     font-size: 30px;
@@ -220,8 +315,11 @@ body {
     font-weight: 400;
     text-align: center;
 }
-.visually-hidden {
-    display: none;
+.email-registration {
+    text-align: center;
+}
+.email-field {
+    width: 600px;
 }
 .link-search-hotels {
     font-style: normal;
@@ -232,6 +330,7 @@ body {
     background-color: #756257;
     text-transform: uppercase;
     text-decoration: none;
+    width: 575px;
 }
 .email-button {
     font-size: 20px;
@@ -241,13 +340,30 @@ body {
     color: #ffffff;
     background-color: #83b3d3;
     text-decoration: none;
-  }
+    width: 200px;
+}
+.footer-title {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer-social-list {
+    width: 107px;
+    margin-left: 72px;
+    margin-right: 61px;
+}
 .footer-tel {
     font-size: 40px;
     line-height: 40px;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
+    width: 720px;
+}
+.footer-logo {
+    width: 115px;
+    margin-right: 72px;
+    margin-left: 53px;
 }
 /* для страницы каталога*/
 .product-card-detail-button {
@@ -270,11 +386,30 @@ body {
 .navigation-button {
     color:#fff;
 }
+.inner-backgroung-images {
+    width: 1200px;
+}
 .inner-header-title {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
     color: #ffffff;
+    margin-left: 70px;
+    margin-top: 0;
+}
+.breadcrumbs-home {
+    margin-left: 70px;
+}
+.breadcrumbs-column {
+    display: flex;
+    justify-content: flex-start;    
+    padding: 0;
+}
+.breadcrumbs-page-back {
+    margin-left: 11px;
+}
+.breadcrumbs-hotel-page {
+    margin-left: 10px;
 }
 .breadcrumbs-link {
     font-size: 16px;
@@ -283,11 +418,39 @@ body {
     font-style: normal;
     color: #ffffff;
 }
-/**/
-.inner-backgroung-images {
-    background-image: url("images/images-catalog/catalog-filter-background.jpg");
+.catalog-sorting {
+    display: flex;
+}
+.catalog-infrastructure {
+    margin-left: 70px;
+    padding: 0;
+}
+.infrastructure-filter-list {
+    padding-left: 0;
+}
+.room-list {
+    padding-left: 0;
+}
+.catalog-rooms {
+    margin-left: 67px;
+    padding: 0;
+    width: 150px;
+}
+.catalog-rating {
+    width: 299px;
+    justify-content: space-between;
+}
+.page-backgroung-images {
+    background-image: url("../images/images-catalog/catalog-filter-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    width: 1200px;
+    height: 408px;
+}
+.filter-bar-button {
+    width: 160px;
+    margin-left: 252px;
+    margin-right: 72px;
 }
 .button-select {
     background-color: #83B3D3;
@@ -306,6 +469,38 @@ body {
     line-height: 23px;
     text-align: center;
     color: #FFFFFF;
+}
+.catalog-filter {
+    display: flex;
+    align-items: center;
+}
+.catalog-price {
+    padding: 0;
+    margin-left: 216px;
+}
+.sort-result {
+    width: 338px;
+    height: 39px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 39px;
+    text-transform: uppercase;
+    color:#000000;
+    margin-left: 71px;
+    margin-right: 191px;
+}
+.select-control {
+    width: 287px;
+    height: 48px;
+    margin-right: 81px;
+}
+.button-filter {
+    width: 48px;
+    height: 48px;
+}
+.button-change-display-type {
+    margin-left: 8px;
+    margin-right: 8px;
 }
 .product-card-select-button {
     background-color: #83B3D3;
@@ -330,6 +525,14 @@ body {
 .catalog-list a {
     text-decoration: none;    
 }
+.catalog-list {
+    display: flex;
+    width: 1056px;
+    padding-left: 0;
+}
+.product-card-list {
+    margin-left: 72px;
+}
 .product-card-price {
     color: #333333;
     font-style: normal;
@@ -344,13 +547,15 @@ body {
     font-size: 18px;
     line-height: 23px;
 }
-
 .product-card-title {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 31px;
     color: #000000;
+}
+.number-stars {
+    width: 114px;
 }
 .rating {
     font-style: normal;
@@ -361,6 +566,7 @@ body {
     text-transform: uppercase;
     color: #333333;
     background-color: #F2F2F2;
+    width: 160px;
 }
 .button-load-more {
     background-color: #83B3D3;
@@ -372,8 +578,8 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
-.email-field {
-    background-color: #F2F2F2;
+.pagination-list {
+    margin-left: 72px;
 }
 .pagination-item a {
     text-decoration: none;
@@ -396,6 +602,14 @@ body {
 .number-hotels {
     font-size: 18px;
     line-height: 23px;
+    font-weight: 400;
+}
+.select-number-page {
+    width: 160px;
+    height: 48px;
+}
+.catalog-subscription-info {
+    width: 1200px;
 }
 .main-subscription-info {
     color: black;
@@ -417,4 +631,7 @@ body {
     font-size: 22px;
     line-height: 26px;
     text-align: center;
+}
+.email-field {
+    background-color: #F2F2F2;
 }
