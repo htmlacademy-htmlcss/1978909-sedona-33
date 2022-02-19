@@ -2,14 +2,14 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400; 
-    src: url("fonts/ptsans-400.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/ptsans-700.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
 html {
@@ -83,11 +83,14 @@ body {
 .main-container {
     flex-grow: 1;
 }
+.visually-hidden {
+    display: none;
+}
 /*фон на главном заголовке */
-.main-title {
+.main-index {
     color: black;
     background-color: #fff;
-    background-image: url("images/images-index/index-background.jpg");
+    background-image: url("../images/images-index/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     width: 1200px;
@@ -290,7 +293,7 @@ body {
 .main-subscription {
     color: black;
     background-color: #fff;
-    background-image: url("images/images-index/background-field-subscription.jpg");
+    background-image: url("../images/images-index/background-field-subscription.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     margin: 0;
@@ -316,9 +319,6 @@ body {
 }
 .email-field {
     width: 600px;
-}
-.visually-hidden {
-    display: none;
 }
 .link-search-hotels {
     font-style: normal;
@@ -385,13 +385,18 @@ body {
 .navigation-button {
     color:#fff;
 }
+.inner-backgroung-images {
+    width: 1200px;
+    /* padding-top: 30px; */
+    padding-bottom: 83px;
+}
 .inner-header-title {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
     color: #ffffff;
-    width: 528px;
     margin-left: 70px;
+    margin-top: 0;
 }
 .breadcrumbs-home {
     margin-left: 70px;
@@ -414,24 +419,40 @@ body {
     font-style: normal;
     color: #ffffff;
 }
+.catalog-sorting {
+    display: flex;
+}
 .catalog-infrastructure {
     margin-left: 70px;
     padding: 0;
 }
+.infrastructure-filter-list {
+    padding-left: 0;
+}
+.room-list {
+    padding-left: 0;
+}
 .catalog-rooms {
     margin-left: 67px;
     padding: 0;
+    width: 150px;
 }
-.catalog-price {
-    padding: 0;
-    margin-left: 216px;
+.catalog-rating {
+    width: 299px;
+    justify-content: space-between;
 }
-/**/
-.inner-backgroung-images {
-    background-image: url("images/images-catalog/catalog-filter-background.jpg");
+.page-backgroung-images {
+    background-image: url("../images/images-catalog/catalog-filter-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     width: 1200px;
+    height: 408px;
+    padding: 0;
+}
+.filter-bar-button {
+    width: 160px;
+    margin-left: 252px;
+    margin-right: 72px;
 }
 .button-select {
     background-color: #83B3D3;
@@ -442,7 +463,6 @@ body {
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
-    margin-left: 81px;
 }
 .button-reset {
     font-style: normal;
@@ -451,6 +471,38 @@ body {
     line-height: 23px;
     text-align: center;
     color: #FFFFFF;
+}
+.catalog-filter {
+    display: flex;
+    align-items: center;
+}
+.catalog-price {
+    padding: 0;
+    margin-left: 216px;
+}
+.sort-result {
+    width: 338px;
+    height: 39px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 39px;
+    text-transform: uppercase;
+    color:#000000;
+    margin-left: 71px;
+    margin-right: 191px;
+}
+.select-control {
+    width: 287px;
+    height: 48px;
+    margin-right: 81px;
+}
+.button-filter {
+    width: 48px;
+    height: 48px;
+}
+.button-change-display-type {
+    margin-left: 8px;
+    margin-right: 8px;
 }
 .product-card-select-button {
     background-color: #83B3D3;
@@ -475,11 +527,13 @@ body {
 .catalog-list a {
     text-decoration: none;    
 }
-.catalog-filter {
-    width: 1057px;
-}
 .catalog-list {
     display: flex;
+    width: 1056px;
+    padding-left: 0;
+}
+.product-card-list {
+    margin-left: 72px;
 }
 .product-card-price {
     color: #333333;
@@ -495,13 +549,15 @@ body {
     font-size: 18px;
     line-height: 23px;
 }
-
 .product-card-title {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 31px;
     color: #000000;
+}
+.number-stars {
+    width: 114px;
 }
 .rating {
     font-style: normal;
@@ -512,6 +568,7 @@ body {
     text-transform: uppercase;
     color: #333333;
     background-color: #F2F2F2;
+    width: 160px;
 }
 .button-load-more {
     background-color: #83B3D3;
@@ -523,8 +580,8 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
-.email-field {
-    background-color: #F2F2F2;
+.pagination-list {
+    margin-left: 72px;
 }
 .pagination-item a {
     text-decoration: none;
@@ -547,6 +604,14 @@ body {
 .number-hotels {
     font-size: 18px;
     line-height: 23px;
+    font-weight: 400;
+}
+.select-number-page {
+    width: 160px;
+    height: 48px;
+}
+.catalog-subscription-info {
+    width: 1200px;
 }
 .main-subscription-info {
     color: black;
@@ -568,4 +633,7 @@ body {
     font-size: 22px;
     line-height: 26px;
     text-align: center;
+}
+.email-field {
+    background-color: #F2F2F2;
 }
