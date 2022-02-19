@@ -119,6 +119,7 @@ body {
     line-height: 36px;
     color: #333333;
     text-align: center;
+    margin: 0;
 }
 /* первое приемущество*/
 .first-advantage-example {
@@ -387,8 +388,6 @@ body {
 }
 .inner-backgroung-images {
     width: 1200px;
-    /* padding-top: 30px; */
-    padding-bottom: 83px;
 }
 .inner-header-title {
     font-weight: 700;
@@ -447,7 +446,6 @@ body {
     background-repeat: no-repeat;
     width: 1200px;
     height: 408px;
-    padding: 0;
 }
 .filter-bar-button {
     width: 160px;
