@@ -59,7 +59,6 @@ body {
 }
 .navigation-link-style {
     display: flex;
-    flex-wrap: wrap; 
     width: 345px;
     margin: 0;
     padding: 0;
@@ -372,7 +371,7 @@ body {
     font-weight: 400;
     text-align: center;
 }
-.emai-registration {
+.email-registration {
    text-align: center;
 }
 .email-field {
@@ -500,7 +499,6 @@ body {
     margin-bottom: 0;
 }
 .catalog-container {
-    display: flex;
     flex-grow: 1;
     width: 1200px;
     margin: 0 auto;
@@ -668,8 +666,7 @@ body {
 .product-card-type-room {
      width: 133px;
      display: inline-block;
-     margin-left: 20px;
-     margin-right: 25px;
+     margin: 0 25px 0 20px;
 }       
 .product-card-price {
     width: 143px;
@@ -695,10 +692,8 @@ body {
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
-    margin-right: 26px;
-    margin-left: 20px;
-    margin-bottom: 16px;
-}
+    margin: 0 26px 16px 20px;
+} 
 .product-card-select-button {
     background-color: #83B3D3;
     color: #FFFFFF;
