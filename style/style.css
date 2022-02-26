@@ -21,7 +21,7 @@ body {
     margin: 0;
     font-size: 18px;
     line-height: 21px;
-    background-color: #fff;
+    background-color: #F2F2F2;
     color: black;
     font-family: "PT Sans";
 }
@@ -32,6 +32,7 @@ body {
     margin: 0 auto;
     color: #000000;
     background-color: #ffffff;
+    padding: 0 70px 0 70px;
 }
 .header-logo {
     width: 139px;
@@ -129,8 +130,7 @@ body {
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 25px;
+    margin: 0 0 25px 0;
 }
 /*Рассмотрим 5 причин...*/
 .main-reason {
@@ -165,7 +165,8 @@ body {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
+    line-height: 28px;
 }
 /*#1*/
 .advantages-example-number {
@@ -274,6 +275,8 @@ body {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
+    line-height: 28px;
+    margin-top: 0;
 }
 /*#2*/
 .second-advantages-example-number {
@@ -415,6 +418,7 @@ body {
     width: 1200px;
     height: 120px;
     margin: 0 auto;
+    background-color: #ffffff;
 }
 .footer-social-list {
     display: flex;
@@ -456,8 +460,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     width: 720px;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin: 40px 0 30px 0;
 }
 .footer-logo {
     width: 115px;
@@ -502,6 +505,7 @@ body {
     flex-grow: 1;
     width: 1200px;
     margin: 0 auto;
+    background-color: #ffffff;
 }
 .main-inner { 
     background-image: url("../images/images-catalog/catalog-filter-background.jpg");
