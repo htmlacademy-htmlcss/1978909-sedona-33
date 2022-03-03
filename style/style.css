@@ -631,13 +631,12 @@ body {
     display: flex;
 }
 .product-card-list {
-    display: flex;
-    justify-content: space-between;
-    width: 1056px;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0 72px;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
     list-style-type: none;
+    margin: 0 72px 34px;
+    padding: 0;
+    gap: 10px 18px;
 }
 .infrastructure-filter-list {
     padding-left: 0;
@@ -645,14 +644,6 @@ body {
 .product-card {
     width: 340px;
     height: 438px;
-    margin-bottom: 10px;
-    text-align: left;
-}
-.product-card:nth-child(3) {
-    margin-right: 0;
-}
-.product-card:nth-child(3n+2) {
-    margin: 0 18px 10px 18px;
 }
 /* названия отелей*/
 .product-card-title {
