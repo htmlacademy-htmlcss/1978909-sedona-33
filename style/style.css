@@ -70,7 +70,6 @@ body {
 	background-color: #756257;
 	content: "";
 }
-
 .navigation-link-header:active {
 	fill: rgba(117, 98, 87);
 	opacity: 0.3;
@@ -583,7 +582,17 @@ body {
 .button-active:focus {
 	border: 3px solid #83B3D3;
 	box-sizing: border-box;
-	border-radius: 10px;
+}
+.button {
+    position: absolute;
+    margin: -10px 0 0 0; 
+    display:block;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+ }
+.button:focus {
+    box-shadow: inset 0 0 0 3px #83B3D3;
 }
 .button-active:active {
 	color: #68A2CA;
@@ -619,6 +628,9 @@ body {
     text-transform: uppercase;
     width: 720px;
     margin: 40px 0 30px 0;
+    text-decoration: none;
+    color: #000000;
+    outline: none;
 }
 .footer-tel:hover {
 	color: #756257;
