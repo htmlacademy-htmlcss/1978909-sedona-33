@@ -46,20 +46,26 @@ body {
     width: 495px;
     margin-right: 122px;
 }
-.navigation-list a {
+.navigation-item a {
     color: #000000;
     text-decoration: none;
 }
 /* ссылки в хедер*/
-.navigation-list {
+.navigation-item {
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
     color: #000000;
     background-color: #ffffff;
+    margin: 20px 0 0 0;
 }
 .navigation-link-header:hover {
 	color: #756257;
+}
+.navigation-logo {
+    position: relative;
+
+    padding: 20px 17px;
 }
 .navigation-logo::before {
 	position: absolute;
@@ -70,7 +76,6 @@ body {
 	background-color: #756257;
 	content: "";
 }
-
 .navigation-link-header:active {
 	fill: rgba(117, 98, 87);
 	opacity: 0.3;
@@ -84,14 +89,10 @@ body {
 }
 .navigation-user {
     max-width: 262px;
+    padding: 0;
     margin-left: auto;
 }
 .header-icon {
-	position: relative;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	margin: auto;
     display: block;
 }
@@ -103,13 +104,15 @@ body {
 	padding: 0;
 }
 .navigation-link-header {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+    padding: 20px 17px;
 	margin: auto;
     display: block;
+    line-height: 0;
+}
+.navigation-link-header-menu {
+    padding: 20px 17px;
+	margin: auto;
+    line-height: 0;
 }
 .navigation-user-button {
     display: block;
@@ -154,7 +157,8 @@ body {
 	color: rgba(255, 255, 255, 0.3);
 }
 .navigation-icon-like {
-    margin: auto;
+    margin: 0;
+    padding: 0;
     fill: #000000;
 }
 .navigation-like:hover .navigation-icon-like {
@@ -174,12 +178,6 @@ body {
 .page-container {
     width: 1200px;
     margin: 0 auto;
-}
-.navigation-link-header {
-    display: block;
-    position: relative;
-    padding: 20px 17px;
-    font-family: "PT Sans";
 }
 /* все из main*/
 .main-container {
@@ -554,27 +552,19 @@ body {
     margin: 49px 61px 53px 72px;
     padding: 0;
     list-style-type: none;
+    width: 128px;
 }
 .button-tw {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	margin: auto;
     display: block;
 }
 .button-fb {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	margin: auto;
     display: block;
-}
+} 
 .button-active {
 	color: #83B3D3;
+    padding-top: 10px;
 }
 .button-active:hover {
 	color: #68A2CA;
@@ -583,30 +573,28 @@ body {
 .button-active:focus {
 	border: 3px solid #83B3D3;
 	box-sizing: border-box;
-	border-radius: 10px;
+}
+.button {
+    display:block;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+ }
+.button:focus {
+    box-shadow: inset 0 0 0 3px #83B3D3;
 }
 .button-active:active {
 	color: #68A2CA;
 	opacity: 0.3;
 }
 .button-yt {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	margin: auto;
     display: block;
 }
 .footer-social-item {
-    width: 22px;
-    height: 18px;
-    margin-right: 29px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
-}
-.footer-social-item {
-	margin-right: 29px;
-	position: relative;
 }
 .footer-social-item:nth-child(3n) {
     margin-right: 0;
@@ -619,6 +607,9 @@ body {
     text-transform: uppercase;
     width: 720px;
     margin: 40px 0 30px 0;
+    text-decoration: none;
+    color: #000000;
+    outline: none;
 }
 .footer-tel:hover {
 	color: #756257;
@@ -632,16 +623,10 @@ body {
 	color: rgba(117,98,87,0.3);
 }
 .footer-logo-link {
-	position: relative;
+    outline: none;
 }
 .footer-logo {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin: auto;
-    margin-left: 53px;
+	margin: 42px 72px 54px 53px;
 	width: 115px;
 }
 .footer-logo:hover {
