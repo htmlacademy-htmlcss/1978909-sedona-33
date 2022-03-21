@@ -59,6 +59,15 @@ body {
     background-color: #ffffff;
     margin: 20px 0 0 0;
 }
+.navigation-link-header-menu:hover {
+	color: #756257;
+}
+.navigation-link-header-menu:active {
+	color: rgba(117, 98, 87, 0.3);
+}
+.navigation-link-header:hover{
+	color: #756257;
+}
 .navigation-link-header:hover {
 	color: #756257;
 }
@@ -554,42 +563,30 @@ body {
     list-style-type: none;
     width: 128px;
 }
-.button-tw {
-	margin: auto;
-    display: block;
-}
-.button-fb {
-	margin: auto;
-    display: block;
-} 
 .button-active {
 	color: #83B3D3;
-    padding-top: 10px;
-}
-.button-active:hover {
-	color: #68A2CA;
-	outline: none;
-}
-.button-active:focus {
-	border: 3px solid #83B3D3;
-	box-sizing: border-box;
+    padding-top: 11px;
 }
 .button {
     display:block;
+    text-align: center;
+    margin: auto;
     width: 40px;
     height: 40px;
     border-radius: 10px;
+    opacity: 0.8;
  }
-.button:focus {
-    box-shadow: inset 0 0 0 3px #83B3D3;
+.button:hover {
+	opacity: 1;
+	outline: none;
 }
-.button-active:active {
+.button:active {
 	color: #68A2CA;
 	opacity: 0.3;
 }
-.button-yt {
-	margin: auto;
-    display: block;
+.button:focus {
+    box-shadow: inset 0 0 0 3px #83B3D3;
+    box-sizing: border-box;
 }
 .footer-social-item {
     width: 40px;
@@ -603,19 +600,19 @@ body {
     font-size: 40px;
     line-height: 40px;
     font-weight: 400;
-    text-align: center;
     text-transform: uppercase;
-    width: 720px;
-    margin: 40px 0 30px 0;
+    margin: 40px 184px 30px 184px;
     text-decoration: none;
-    color: #000000;
+    color: #000000; 
     outline: none;
 }
 .footer-tel:hover {
 	color: #756257;
 }
 .footer-tel:focus {
-	box-shadow: inset 0 0 0 3px #83B3D3;
+    outline-offset: 15px;
+    outline: 3px solid #83B3D3;
+    border-radius: 10px;
 	color: #756257;
 }
 .footer-tel:active {
@@ -623,23 +620,24 @@ body {
 	color: rgba(117,98,87,0.3);
 }
 .footer-logo-link {
+    display: block;
+    width: 115px;
+    height: 34px;
     outline: none;
+    margin: 42px 72px 54px 53px;
+    border-radius: 10px;
 }
-.footer-logo {
-	margin: 42px 72px 54px 53px;
-	width: 115px;
-}
-.footer-logo:hover {
+.footer-logo-link:hover {
 	color: #756257;
 	opacity: 0.6;
 }
-.footer-logo:focus {
-	box-shadow: inset 0 0 0 3px #83B3D3;
+.footer-logo-link:focus {
+    outline-offset: 15px;
+    outline: 3px solid #83B3D3;
 	color: #756257;
 	opacity: 0.6;
-	outline:none;
 }
-.footer-logo:active {
+.footer-logo-link:active {
 	background: #ffffff;
 	color: rgba(117,98,87);
 	opacity: 0.3;
@@ -911,7 +909,7 @@ body {
 /* названия отелей*/
 .product-card-title {
     width: 220px;
-    margin: 0 122px 16px 20px;
+    margin: 0 122px 0 20px;
     font-weight: bold;
     font-size: 24px;
     line-height: 31px;
@@ -1049,21 +1047,26 @@ body {
     line-height: 31px;
     color: #000000;
 }
+.rating-hotel {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+}
 .rating {
-    font-style: normal;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    padding: 9px 0 10px 0;
     font-weight: normal;
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
     color: #333333;
     background-color: #F2F2F2;
-    margin-left: 40px;
-}
-.rating-hotel {
-    margin: 16px 20px 0 20px;
+    border-radius: 4px;
 }
 .status-indication {
-    width: 100px;
+    padding: 10px 0;
 }
 .button-load-more {
     background-color: #83B3D3;
@@ -1079,6 +1082,16 @@ body {
     padding: 17px 0;
     cursor: pointer;
     border: none;
+}
+.button-load-more:hover {
+    background-color: #68A2CA;
+}
+.button-load-more:focus {
+    background: #68A2CA;
+	box-shadow: inset 0 0 0 3px #756257;
+}
+.button-load-more:active {
+    opacity: 0.3;
 }
 .email-field {
     background-color: #F2F2F2;
