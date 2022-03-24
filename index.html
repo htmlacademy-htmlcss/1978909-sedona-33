@@ -41,6 +41,9 @@
 							</svg>
                             <span class="visually-hidden">Like</span>
                         </a>
+                        <a class="navigation-options" href="#">
+                            <span class="options-of-interest">12</span>
+                        </a>
                     </li>
                     <li class="navigation-icon-button header-icon">
                         <a class="navigation-user-button" href="#">ХОЧУ СЮДА!</a>
@@ -176,6 +179,60 @@
 			</a>
         </div>
     </footer>
+    <div class="modal-container modal-container-close">
+        <div class="modal modal-auth">
+            <button class="modal-close-button">
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+              <section class="modal-content">
+                <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+              </section>
+              <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+                <p class="field-arrival-date">
+                  <label class="modal-label" for="arrival-date">Дата заезда:</label>
+                  <input class="auth-form-field field" type="text" id="auth-login" name="arrival-date" placeholder="27 апреля 2020">
+                  <span class="calendar"></span>
+                </p>
+                <p class="field-departure">
+                  <label class="modal-label" for="departure">Дата выезда:</label>
+                  <input class="auth-form-field field" type="text" id="auth-password" name="departure" placeholder="1 сентября 2021">
+                  <span class="calendar-second"></span>
+                  <span class="field-info-invalid">Мы не можем отправить вас в прошлое.</span>
+                  <span class="field-info-valid">На эти даты есть свободные номера. Пока есть.</span>
+                </p>
+                <div class="field-age">
+                    <p class="field-group-select field-adults">
+                        <label class="modal-label-adilts" for="adults">Взрослые:</label>
+                        <a class="modal-button auth-form-button"><svg class="modal-minus" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/></svg></a>
+                        <input class="auth-form-adults field" type="number" id="adults" name="auth-password" placeholder="2">
+                        <a class="modal-button auth-form-button-left"><svg class="modal-plus" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/></svg></a>
+                    </p>
+                    <p class="field-group-select field-children">
+                        <span class="modal-label-children form-label-icon">
+                        <label class="modal-label-children" for="children">Дети:</label>
+                        <span class="tooltip">
+                            <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                                <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/><g clip-path="url(#clip0_32601_200)"><path d="M12 17H13V11H12V17Z" fill="white"/><path d="M13 8H12V9H13V8Z" fill="white"/></g><defs><clipPath id="clip0_32601_200"><rect width="1" height="9" fill="white" transform="translate(12 8)"/></clipPath></defs>
+                                </svg>
+                            </button>
+                            <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. &nbspДети до 6 лет размещаются бесплатно.</span>
+                            </span>
+                        </span>
+                        <a class="modal-button auth-form-button"><svg class="modal-minus" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/></svg>
+                        </a>
+                        <input class="auth-form-children field" type="number" id="children" name="auth-password" placeholder="1">
+                        <a class="modal-button auth-form-button-left"><svg class="modal-plus" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/></svg></a>
+                    </p>
+                </div>
+                <div class="auth-form-link">
+                    <button class="auth-form-search button" type="submit">Найти</button>
+                </div>
+        </div>
+    </div>
   </body>
 </html>
 

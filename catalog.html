@@ -40,6 +40,9 @@
 							</svg>
                             <span class="visually-hidden">Like</span>
                         </a>
+                        <a class="navigation-options" href="#">
+                            <span class="options-of-interest">12</span>
+                        </a>
                     </li>
                     <li class="navigation-icon-button header-icon">
                         <a class="navigation-user-button" href="#">ХОЧУ СЮДА!</a>
@@ -75,20 +78,23 @@
                         <ul class="infrastructure-filter-list">
                             <li class="type-infrastructure">
                                 <label class="infrastructure">
-                                    <input class="infrastructure-input" type="checkbox" name="swimming-pool" checked>
-                                    Бассейн
+                                    <input class="visually-hidden infrastructure-input" type="checkbox" name="swimming-pool" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Бассейн</span>
                                 </label>
                             </li>
                             <li class="type-infrastructure">
                                 <label class="infrastructure">
-                                    <input class="infrastructure-input" type="checkbox" name="parking" checked>
-                                    Парковка
+                                    <input class="visually-hidden infrastructure-input" type="checkbox" name="parking" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Парковка</span>
                                 </label>
                             </li>
                             <li class="type-infrastructure">
                                 <label class="infrastructure">
-                                    <input class="infrastructure-input" type="checkbox" name="Wi-Fi">
-                                    Wi-Fi
+                                    <input class="visually-hidden infrastructure-input" type="checkbox" name="Wi-Fi">
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Wi-Fi</span>
                                 </label>
                             </li>
                         </ul> 
@@ -98,26 +104,45 @@
                         <ul class="room-list">
                             <li class="change-room">
                                 <label class="room">
-                                    <input class="room-input" type="radio" name="type-room" value="hotel" checked>
-                                    Гостиница
+                                    <input class="visually-hidden infrastructure-input" type="radio" name="type-room" value="hotel" checked>
+                                    <span class="control-room"></span>
+                                    <span class="control-label">Гостиница</span>
                                 </label>
                             </li>
                             <li class="change-room">
                                 <label class="room">
-                                    <input class="room-input" type="radio" name="type-room" value="motel">
-                                    Мотель
+                                    <input class="visually-hidden infrastructure-input" type="radio" name="type-room" value="motel">
+                                    <span class="control-room"></span>
+                                    <span class="control-label">Мотель</span>
                                 </label>
                             </li>
                             <li class="change-room">
                                 <label class="room">
-                                    <input class="room-input" type="radio" name="type-room" value="apartments">
-                                    Апартаменты
+                                    <input class="visually-hidden infrastructure-input" type="radio" name="type-room" value="apartments">
+                                    <span class="control-room"></span>
+                                    <span class="control-label">Апартаменты</span>
                                 </label>
                             </li>
                         </ul> 
                     </fieldset>
                     <fieldset class="catalog-filter-group catalog-price">
                         <legend class="catalog-filter-title">Стоимость, &nbsp;₽:</legend>
+                        <div class="range-scale">
+                            <div class="range-wrapper-inputs">
+                                <label class="catalog-filter-label">
+                                    <input class="range-input input-min" type="number" placeholder="от" name="min-price"> 
+                                    <input class="range-input input-max" type="number" placeholder="до" name="max-price"> 
+                                </label>
+                            </div>
+                            <div class="range-bar">
+                                <button class="range-toggle toggle-min">
+                                <span class="visually-hidden">Изменить минимальную цену.</span>
+                                </button>
+                                <button class="range-toggle toggle-max">
+                                <span class="visually-hidden">Изменить максимальную цену.</span>
+                                </button>
+                            </div>
+                        </div>
                     </fieldset>
                     <div class="filter-bar-button">
                         <a class="button-select" href="#">Применить</a>
@@ -172,7 +197,7 @@
                     <a class="product-card-more-button" href="#">Подробнее</a>
                     <a class="product-card-select-button" href="#">Избранное</a>
                     <div class="rating-hotel">
-                        <img class="Desert-Quail-Inn-stars  status-indication" src="images/images-catalog/three-stars-rating.svg" width="68px" height="17px">
+                        <img class="status-indication" src="images/images-catalog/three-stars-rating.svg" width="68px" height="17px">
                         <span class="rating">Рейтинг: 8,9</span>
                     </div>
                 </li>
