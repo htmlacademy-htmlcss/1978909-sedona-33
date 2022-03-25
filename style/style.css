@@ -146,7 +146,7 @@ body {
 	opacity: 0.6;
 }
 .navigation-search:active .navigation-icon {
-	fill: rgba (117,98,87,0.3);
+	fill: #aca1a0;
 }	
 .navigation-user-button:hover {
 	color: #FFFFFF;
@@ -167,10 +167,10 @@ body {
     fill: #000000;
 }
 .navigation-like:hover .navigation-icon-like {
-	fill: rgba (117,98,87,0.6);
+	fill: #aca1a0;
 }
 .navigation-like:active .navigation-icon-like {
-	fill: rgba (117,98,87,0.3);
+	fill: #d6d0d0;
 }
 .navigation-options {
     position: relative;
