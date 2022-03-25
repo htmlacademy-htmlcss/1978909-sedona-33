@@ -167,12 +167,10 @@ body {
     fill: #000000;
 }
 .navigation-like:hover .navigation-icon-like {
-	fill: rgba (117,98,87);
-	opacity: 0.6;
+	fill: rgba (117,98,87,0.6);
 }
 .navigation-like:active .navigation-icon-like {
-	fill: rgba (117,98,87);
-	opacity: 0.3;
+	fill: rgba (117,98,87,0.3);
 }
 .navigation-options {
     position: relative;
@@ -686,9 +684,9 @@ body {
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
 }
-/* .modal-container-close {
+.modal-container-close {
     display: none;
-} */
+}
 .modal {
     position: relative;
     margin: auto;
